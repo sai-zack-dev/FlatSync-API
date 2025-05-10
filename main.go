@@ -1,8 +1,8 @@
 package main
 
 import (
-	"FlatSync-API/database"
-	"FlatSync-API/handlers"
+	"github.com/sai-zack-dev/FlatSync-API/database"
+	"github.com/sai-zack-dev/FlatSync-API/handlers"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -21,6 +21,8 @@ func main() {
 	// Auth routes
 	app.Post("/api/register", handlers.Register)
 	app.Post("/api/login", handlers.Login)
+
+	app.Get("/api/protected", handlers.Protected)
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello from Fiber!")

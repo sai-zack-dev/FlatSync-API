@@ -1,0 +1,42 @@
+# Go binaries and build artifacts
+/bin/
+/obj/
+/vendor/
+
+# Go test result files
+*.test
+*.out
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Go module files
+go.sum
+go.mod
+
+# Build directory
+/build/
+
+# Log files
+*.log
+
+# OS-specific files (macOS, Linux, Windows)
+.DS_Store
+Thumbs.db
+
+# Environment variables and .env files
+.env
+.env.* 
+
+# .godotenv (for dotenv files)
+.godotenv
+
+# Go coverage files
+*.coverprofile
+
+# VS Code settings
+.vscode/
+
+# Ignore the go workspace file if used (optional)
+go.work
