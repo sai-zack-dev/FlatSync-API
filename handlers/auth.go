@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"time"
 
-	"my-fiber-api/database"
-	"my-fiber-api/models"
+	"github.com/sai-zack-dev/FlatSync-API/database"
+	"github.com/sai-zack-dev/FlatSync-API/models"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt/v4"
