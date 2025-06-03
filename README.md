@@ -120,7 +120,7 @@ You can use Postman or curl to test the API endpoints.
 For example, using curl to register a user:
 
 ```bash
-curl -X POST http://localhost:3000/register \
+curl -X POST http://localhost:3000/api/register \
     -H "Content-Type: application/json" \
     -d '{"name": "John Doe", "email": "john@example.com", "password": "securepassword", "dob": "1990-01-01", "avatar": "https://example.com/avatar.png"}'
 ```
